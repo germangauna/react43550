@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import '../src/components/footer';
+import Footer from './components/Footer';
+import Saludo from './components/Saludo';
 
 function App() {
 
@@ -8,12 +9,15 @@ function App() {
   const boton =<button>boton</button>/* se crea el boton con una constante y despues se crea en el DOM con unas llaves en el lugar que lko queremos ubicar*/
   const nombre = 'Mauricio'
 
-  const estilos = { /* a la hora de definir los estilos siempre se usa el camelCase para que funcione en jsx
-                       seprados los estilos por una coma, menos el ultimo*/  
+  const estilos = { /* a la hora de definir los estilos siempre se usa el camelCase para que funcione en jsx seprados los estilos por una coma, menos el ultimo. los cambios siempre van del padre al children. A qui dentro de App podemos definir una funcion, y a la funcion podemos pasarla como props, el Action es una referencia a la funcion*/  
     color: 'red',
     backgroundColor: 'yellow',
     padding: 20
 
+  }
+
+  const mensaje = () => {
+    console.log('mostrar mensaje en la consola');
   }
 
   return (
@@ -23,15 +27,20 @@ function App() {
       <h1>Hola Mundo  { nombre } </h1>
       
       <strong style={estilos} >Este es un mensaje</strong>
-      {boton} 
+      {boton}
+
+      <Saludo name='Gabriel' lastname='Lerna' age= {31} action={mensaje}/>
+      <Saludo name='Ana' lastname='Lopez' age={22} action={mensaje}/>
       
       <li>fresa</li>
       <li>melon</li>
       <li>sandia</li>
       <li>berrys</li>
       <li>bananos</li>
-      <footer>footer</footer>
-    </div>/* en jsx solo  puede haber un solo div, puede haber un solo padre
+
+  <Footer/>  
+  
+    </div> /* en jsx solo  puede haber un solo div, puede haber un solo padre
               <strong style = { { color: 'blue'} } >Este es un mensaje</strong> esta es otra manera de definir los estilos*/
 
   );
