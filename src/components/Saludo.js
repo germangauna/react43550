@@ -8,7 +8,7 @@ const Saludo = ({ name, lastname, age, action }) => { // entre los parentesis po
 
     return (    
     <div style= {title}>          
-      <div >Saludos {name} {lastname} </div>
+      <h1 className="text-3m font-bold text-orange-700 italic ... underline">Saludos {name} {lastname} </h1>
       <div>tienes {age} años </div>
       <button onClick={action}>click</button>
     </div>     

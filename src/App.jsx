@@ -1,6 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Footer from './components/Footer';
+import ItemListContainer from './components/ItemListContainer';
+import Navbar from './components/Navbar';
 import Saludo from './components/Saludo';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
 
     <div className="App">
 
+      <Navbar/>
+      <ItemListContainer greeting='Hola Amantes de los Cactus'/>
       <h1>Hola Mundo  { nombre } </h1>
       
       <strong style={estilos} >Este es un mensaje</strong>
@@ -38,7 +42,10 @@ function App() {
       <li>berrys</li>
       <li>bananos</li>
 
-  <Footer/>  
+      <Footer>
+        <strong>1 enlace</strong>
+        <strong>2 enlace</strong>
+      </Footer>  
   
     </div> /* en jsx solo  puede haber un solo div, puede haber un solo padre
               <strong style = { { color: 'blue'} } >Este es un mensaje</strong> esta es otra manera de definir los estilos*/
