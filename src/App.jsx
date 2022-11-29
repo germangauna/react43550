@@ -1,5 +1,6 @@
 
 import './App.css';
+import Clicker from './components/Clicker';
 import Footer from './components/Footer';
 import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
@@ -30,6 +31,8 @@ function App() {
       <ItemListContainer greeting='Hola Amantes de los Cactus'/>
       <h1>Hola Mundo  { nombre } </h1>
       
+      <Clicker/>
+
       <strong style={estilos} >Este es un mensaje</strong>
       {boton}
 
