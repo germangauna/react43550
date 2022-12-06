@@ -38,7 +38,8 @@
 }
 
 li {
-  border: solid red 4px;
+  border: solid blueviolet;
   margin: 20px;
   padding: 20px;
+  list-style: none;
 }
