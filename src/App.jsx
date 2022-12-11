@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
 import ProductsList from './components/ProductsList';
+import ChartList from './components/rickyandmorty/ChartList';
 import Saludo from './components/Saludo';
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
       <Navbar/>
       <ItemListContainer greeting='Hola Amantes de los Cactus'/>
       <h1>Hola Mundo  { nombre } </h1>
-      <ProductsList/>
+      <ProductsList />
+      <ChartList/>
      <Clicker/>
 
   
