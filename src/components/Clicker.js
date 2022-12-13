@@ -40,8 +40,8 @@ const Clicker = () => {
     return (
       
       <div className="p-10 flex flex-col">
-          <strong> Clicker </strong>
-          <button onClick= { clickHandler} className="btn" > Aumentar </button>
+          
+          <button onClick= { clickHandler} className="btn" > Agregar al Carrito </button>
           <strong> { count } </strong>
       </div>
   )

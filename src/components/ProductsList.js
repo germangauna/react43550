@@ -109,9 +109,12 @@ import React, { useEffect, useState } from 'react'
 import ProductsCard from './ProductsCard'
 // Agregamos una funcion PRODUCTS con un arrays de objetos, sacamos del resolve del getProducts que tenia nuestro arrays de objetos, para poner el arrays en una constante aparte con stock y en la promise cambiamos a 2 segundos(2000), despues del setTimeout. para ue aparesca en pantalla y deje de salir en consola con errores errores, en el products.map(), le vamos a poner p.name, que son los nombres de nuestros productos ern nuestro arrays, despues haremos otro componente con un rpoductsCard, y asi empezaremos una nueva logica, intergrampos en ProductsCard.js al products.map() por el <li>, quitamos el p.name ahora. y hacemos un ProductsCard por cada producto de nuestros componente y en la Key lo vamos a psar como p.id, que es donde esta toda la informacion de nuestros productos, lo importamos a PruductsCard y le pasamos cada parametro de cada producto en el map(), mas props, le agrgamos mas props, primero el name= {p.name}, despues los destructuramos a los props desde el componente productsCard, entre llaves como parametros, deepues lo traemos como <li> en productsCard sacamos el div para que adquiera los estilos del <li>, solo aparecera el nombre, pero si queremos traer  todas las propiedades de los objetos del array, haceremos un  sintaxis de todo poniendo en el map(), cambiamos esto name= {p.name} por esto {...p}, y agregamos en los parametros de productsCard las propiedades de nuestros objetos {id, name, stock} y nen el return que cambiamos el div por el li, entre llaves {id} - {name} - stock: {stock}, separados por un guion por puntos, lo mque quieran.
 const PRODUCTS = [
-  { id: 1, name: 'iphone', stock: 12 },
-  { id: 2, name: 'galaxy', stock: 14 },
-  { id: 3, name: 'xiaomi', stock: 23 },
+  { id: 1, name: 'Captus1', stock: 12 },
+  { id: 2, name: 'Captus2', stock: 14 },
+  { id: 3, name: 'Captus3', stock: 23 },
+  { id: 4, name: 'Captus4', stock: 18 },
+  { id: 5, name: 'Captus5', stock: 11 },
+  { id: 6, name: 'Captus6', stock: 10 },
 ]
             
 const ProductsList = () => {  
@@ -140,7 +143,7 @@ const ProductsList = () => {
 
      <div>
             
-      <h1>ProductsList</h1>
+      <h1 className='text-3m font-bold text-orange-400 underline'>Lista de Productos</h1>
        
 { products.map( p => <ProductsCard key={ p.id } {...p} /> )  }
       

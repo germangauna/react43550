@@ -16,7 +16,7 @@ const ChartList = () => {
    }, [] )
 
     const getChars = () => {
-        const URL = 'https://rickandmortyapi.com/api/character'
+        const URL = ''
         fetch(URL)
             .then(response => response.json()//return{}
             )
@@ -28,7 +28,7 @@ const ChartList = () => {
 
   return (
       <div>
-          <h1 className="text-3m font-bold text-orange-400 underline" > lista de personajes</h1>
+          <h1 className="text-3m font-bold text-orange-400 underline" > </h1>
           {
             personajes.map(p => <CharCard key={p.id} {...p} />)//traemos el componente chardCard 
               //personajes.map(p => <li>{p.name}</li>) este es para traer la lista de personajes dee la api
