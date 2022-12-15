@@ -16,7 +16,7 @@ const ChartList = () => {
    }, [] )
 
     const getChars = () => {
-        const URL = ''
+        const URL = 'p'
         fetch(URL)
             .then(response => response.json()//return{}
             )

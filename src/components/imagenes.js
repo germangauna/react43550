@@ -1,0 +1,1 @@
+// lo primero que tenemos que hacer para poner una imagen es importarla, y hacer un export defoult y exporto un objeto, y cuando lo importo pongo la ruta donde esta la imagen. tambien lo puedo exportar como un arrays

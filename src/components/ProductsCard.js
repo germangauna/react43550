@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ProductsCard = ( {id, name, stock} ) => {
+const ProductsCard = ( {id, name, stock, descr} ) => {
   return (
-    <li>{id}. {name} - stock: {stock}</li>
+    <div>
+      <li>{id}. {name} - stock: {stock}</li>
+    </div>
   )
 }
 export default ProductsCard

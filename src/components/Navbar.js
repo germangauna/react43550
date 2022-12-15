@@ -1,5 +1,7 @@
 // Para crear el navBar con daysiUI, busque en la paginba el navbar que queria, copie el codigo, cree un nuevo archico en la carpeta components, "navbBar.js", donde hice un rafce, donde borre el <div>navBar</div> y ahi pegue el codigo entero, y en el archivo tailwind.conf en la parte de plugins pegue esto:  require("daisyui")]. y listo. por ultimo lo importamos a nuestro App.jsx
 
+import captus1 from '../assets/img/captus1.jpg';
+
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
@@ -27,7 +29,7 @@ const Navbar = () => {
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
-          <img src="https://www.shutterstock.com/es/image-photo/cactus-on-pink-background-minimal-creative-1058383775" />
+          <img src= { captus1 } />
         </div>
       </label>
       <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
