@@ -2,8 +2,11 @@ import React from 'react'
 
 const ProductsCard = ( {id, name, stock, descr} ) => {
   return (
-    <div>
-      <li>{id}. {name} - stock: {stock}</li>
+    <div className='m-10'>
+      <div>{ id }</div>
+      <div>{ name }</div>
+      <div>{descr}</div>
+      <div>{stock}</div>
     </div>
   )
 }

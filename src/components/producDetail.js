@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 
-const ITEM = { id: 1, name: 'Captus1', descr: "tienen flores amarillas en forma de estrella", stock: 12 },
+const ITEM =
+    { id: 1, name: 'Captus1', descr: "tienen flores amarillas en forma de estrella", stock: 12 }
 
-const producDetail = () => {
+const ProducDetail = () => {
 
     const [items, setItems] = useState({})
 
@@ -13,10 +14,10 @@ const producDetail = () => {
     }, [])
 
     const getItemsDetail = () => {
-        return new Promise(resolve, reject => {
+        return new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(ITEM)
-            }, 2000);
+                resolve (ITEM)
+            }, 5000);
         })
     }
 
@@ -26,8 +27,7 @@ const producDetail = () => {
           <li>{items.name}</li>
           <li>{items.descr}</li>
           <li>{items.stock}</li>
-          
     </div>
   )
 }
-export default producDetail
+export default ProducDetail
